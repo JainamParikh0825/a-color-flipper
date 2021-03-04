@@ -16,7 +16,8 @@ const colors = [
 ];
 
 // Change Color Button Event Listener
-btnChangeColor.addEventListener("click", () => {
+btnChangeColor.addEventListener("click", (e) => {
+  e.preventDefault();
   let n = Math.floor(Math.random() * 10);
 
   // Changing styles on based of random number between 0-9
